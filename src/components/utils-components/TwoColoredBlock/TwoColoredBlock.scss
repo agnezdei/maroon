@@ -1,0 +1,44 @@
+$size-of-tablet: 800px;
+$size-of-mobile: 550px;
+.two-colored-block {
+  width: 100%;
+  padding-left: 98px;
+  box-sizing: border-box;
+  overflow: hidden;
+  @media screen and (max-width: $size-of-tablet) {
+    padding-left: 45px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    padding: 0px 15px 26px;
+  }
+  &__wrapper {
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    gap: 61px;
+    margin: auto;
+    @media screen and (max-width: $size-of-mobile) {
+      flex-direction: column;
+      overflow-x: auto;
+      margin-bottom: -143px;
+    }
+  }
+  &__colored-area {
+    min-width: 670px;
+    background-color:  var(--color-of-blocks-background);
+    padding: 90px 214px 50px 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $size-of-tablet) {
+      padding: 50px 214px 59px 60px;
+      padding-right: 260px;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      justify-content: center;
+      padding: 50px 30px 110px;
+      min-width: 290px;
+    }
+  }
+}

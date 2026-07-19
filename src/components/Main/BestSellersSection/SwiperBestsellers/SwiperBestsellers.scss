@@ -1,0 +1,27 @@
+$size-of-tablet: 800px;
+$size-of-mobile: 450px;
+.bestsellers .swiper {
+  @media screen and (max-width: $size-of-mobile) {
+    padding: 0;
+    gap: 0;
+    max-width: 100vw;
+    margin-left: 50px;
+  }
+  &-wrapper {
+    height: auto;
+  }
+}
+.bestseller-navigate-block {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  justify-content: end;
+  padding: 19px 98px 0 0;
+  @media screen and (max-width: $size-of-tablet) {
+    padding: 23px 42px 0;
+    margin-bottom: -5px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+$size-of-tablet: 800px;
+$size-of-mobile: 450px;
+.new-collection {
+  margin: auto;
+  width: 100%;
+  min-height: 400px;
+  background-image: url(../../../images/new-collection-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @media screen and (max-width: $size-of-tablet) {
+
+    min-height: 432px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    min-height: 562px;
+    background-size: cover;
+    background-position: top left;
+    background-image: url(../../../images/new-collection-background-small.png), linear-gradient(90deg, rgba(214,208,199,1) 0%, rgba(242,239,235,1) 100%);
+
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 48%;
+    left: 58.5%;
+    transform: translateY(-50%);
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    @media screen and (max-width: $size-of-tablet) {
+      top: 48.5%;
+      right: 85px;
+      left: auto;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      top: 70%;
+      right: 33px;
+      width: 253px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 500;
+    font-family: var(--font-of-title);
+    line-height: 40px;
+    @media screen and (max-width: $size-of-tablet) {
+      margin-top: 4px;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 15px 0 33px;
+    font-size: 18px;
+    line-height: 26px;
+    @media screen and (max-width: $size-of-mobile) {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$size-of-tablet: 800px;
+$size-of-mobile: 450px;
+.our-history {
+  width: 100%;
+  margin: auto;
+  background-image: url("../../../images/our-history-background.png");
+  min-height: 433px;
+  background-size: cover;
+  @media screen and (max-width: $size-of-tablet) {
+    min-height: 394px;
+    background-position: -237px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    min-height: 346px;
+    background-position: -356px;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 901px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 110px auto;
+    padding: 0 58px;
+    box-sizing: border-box;
+    @media screen and (max-width: $size-of-tablet) {
+      margin: 91px auto;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      margin: 55px auto;
+      padding: 0 39px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-family: var(--font-of-title);
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 41px;
+    font-weight: 500;
+    @media screen and (max-width: $size-of-mobile) {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 23px;
+    }
+  }
+}

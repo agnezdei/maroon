@@ -1,0 +1,94 @@
+$size-of-max-width: 1366px;
+$size-of-tablet: 800px;
+$size-of-mobile: 550px;
+.fill-form-colored {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  @media screen and (max-width: $size-of-mobile) {
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0 0 25px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: var(--font-of-title);
+    @media screen and (max-width: $size-of-tablet) {
+     margin-top: 2px;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      margin-bottom: 14px;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 12px;
+    @media screen and (max-width: $size-of-mobile) {
+      &:first-of-type {
+        display: none;
+      }
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    &:last-of-type{
+      margin-bottom: 36px;
+      @media screen and (max-width: $size-of-tablet) {
+        margin-bottom: 38px;
+      }
+      @media screen and (max-width: $size-of-mobile) {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+.fill-form-non-colored {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -233px;
+  min-width: 670px;
+  padding: 66px 0;
+  @media screen and (max-width: $size-of-tablet) {
+    min-width: 398px;
+    padding: 35px 0;
+    left: -219px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    left: 0px;
+    min-width: 250px;
+    padding: 0;
+    top: -150px;
+    margin: auto;
+  }
+  &__picture {
+    margin: auto;
+    height: 451px;
+    object-fit: none;
+    object-position: calc((100vw - 1366px) / 3 - 66px) -107px;
+    width: 100%;
+    @media screen and (min-width: $size-of-max-width) {
+      object-position: -66px -107px;
+    }
+
+    @media screen and (max-width: $size-of-tablet) {
+      object-position: calc((100vw - 768px) / 3 - 61px) 27px;
+      object-fit: cover;
+      height: 355px;
+      scale: 1.35;
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      object-position: -6px 23px;
+      scale: 1.18;
+      height: 250px;
+    }
+  }
+}

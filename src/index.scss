@@ -1,0 +1,81 @@
+$size-of-tablet: 900px;
+$size-of-mobile: 450px;
+
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+:root {
+  --font-of-text: Mplus;
+  --font-of-title: Raleway;
+  --color-of-text: #122947;
+  --color-of-gray-text: #9a9da0;
+  --color-of-main-background: #f9f7f6;
+  --color-of-border-nav: #dbdce0;
+  --color-of-blocks-background: #f4f1ed;
+  --size-of-tablet: 800px;
+  --size-of-mobile: 400px;
+  --color-of-border-button: #b3bac1;
+}
+html {
+  scroll-behavior: smooth;
+  color: var(--color-of-text);
+  background-color: var(--color-of-main-background);
+  font-family: var(--font-of-text);
+}
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.root {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 140px;
+  @media screen and (max-width: $size-of-tablet) {
+    row-gap: 120px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    row-gap: 80px;
+  }
+}

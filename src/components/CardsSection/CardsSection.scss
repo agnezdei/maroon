@@ -1,0 +1,46 @@
+$size-of-tablet: 900px;
+$size-of-mobile: 450px;
+
+.card-section {
+  padding: 0 98px;
+  box-sizing: border-box;
+  max-width: 1366px;
+  margin: auto;
+  @media screen and (max-width: $size-of-tablet) {
+    padding: 0 45px;
+  }
+  @media screen and (max-width: $size-of-mobile) {
+    padding:0 15px;
+  }
+  &__cards-area {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+    @media screen and (max-width: $size-of-tablet) {
+      grid-template-columns: repeat(2, 324px);
+      justify-content: center; 
+    }
+    @media screen and (max-width: $size-of-mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__navigate-area {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+  &__paging-area {
+    grid-column: 2/2;
+    justify-self: center;
+  }
+  &__buttons-area {
+    display: flex;
+    gap: 32px;
+  }
+  &__empty-text {
+    font-size: 16px;
+    text-align: center;
+    grid-column: span 4;
+  }
+}
