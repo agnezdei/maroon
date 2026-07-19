@@ -9,4 +9,4 @@
 <li>Адаптив для корректной работы на планшете и мобильных устройствах</li>
 </ul>
 
-[https://agnezdei.github.io/maroon/](https://agnezdei.github.io/maroon/)
+[https://agnezdei.github.io/maroon-new/](https://agnezdei.github.io/maroon-new/)
