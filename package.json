@@ -1,7 +1,7 @@
 {
-  "name": "maroon",
+  "name": "maroon-new",
   "version": "0.1.0",
-  "homepage": "https://agnezdei.github.io/maroon-new/",
+  "homepage": "https://agnezdei.github.io/maroon/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agnezdei/maroon-new"
+    "url": "git+https://github.com/agnezdei/maroon"
   },
   "eslintConfig": {
     "extends": [
