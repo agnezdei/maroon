@@ -1,4 +1,4 @@
-<h1>Учебный проект для Маскимастер</h1>
+<h1>Учебный проект для Максимастер</h1>
 <ul>
 <li>Верстка макета <a href="https://www.figma.com/design/2dEZIWvZyomsUEFaPYo7zJ/design-maroon?node-id=77-20&t=6JvcSrdP0iJbAnKs-0"> по шаблону с Figma</a> </li>
 <li>Использованы моковые данные для наполнения карточек товаров</li>
