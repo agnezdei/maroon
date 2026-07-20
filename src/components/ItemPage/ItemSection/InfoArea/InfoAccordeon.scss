@@ -11,12 +11,6 @@ $size-of-mobile: 700px;
     flex-direction: row;
     padding: 15px 15px 0 0;
     cursor: pointer;
-    &:hover {
-      .info-accordeon__button::after,
-      .info-accordeon__button::before {
-        transform: scale(1.5);
-      }
-    }
     @media screen and (max-width: $size-of-mobile) {
       padding: 16px 10px 0 0;
     }
@@ -48,12 +42,6 @@ $size-of-mobile: 700px;
     position: relative;
     margin-left: auto;
     align-self: center;
-    &:hover {
-      &::after,
-      &::before {
-        transform: scale(1.5);
-      }
-    }
     &::before,
     &::after {
       content: "";

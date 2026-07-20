@@ -46,3 +46,21 @@ export const FilterDefaultData: TypeOfSettingsFilter = {
   face: [],
   skin: [],
 };
+
+export const FACE_CATEGORIES = [
+  "Крема",
+  "Сыворотки",
+  "Маски",
+  "Пенки",
+  "Тоники",
+  "Пудры",
+] as const;
+
+export const BODY_CATEGORIES = [
+  "Крема",
+  "Масла",
+  "Скрабы",
+  "Мыло",
+  "Бомбочки для ванны",
+  "Соль для ванны",
+] as const;

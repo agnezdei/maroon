@@ -47,7 +47,6 @@ $size-of-mobile: 450px;
     top: calc(50% - 97px);
     left: 50%;
     transform: translate(-50%, -50%);
-    pointer-events: none;
 
     @media screen and (max-width: $size-of-tablet) {
       top: calc(50% - 78px);

@@ -51,7 +51,7 @@ function IntroSection() {
   return (
     <section className="intro">
       <div className="intro__wrapper">
-        <Link className="intro__link" to={AppRoute.Catalog}>
+        <Link to={`${AppRoute.Catalog}?filter=face`} className="intro__link">
           <figure className="intro__figure">
             <img
               className="intro__picture"
@@ -71,7 +71,7 @@ function IntroSection() {
           </p>
           <AnimatedButton text={"Подробнее"} onClick={AppRoute.AboutThisPage} />
         </div>
-        <Link className="intro__link" to={AppRoute.Catalog}>
+        <Link to={`${AppRoute.Catalog}?filter=body`} className="intro__link">
           <figure className="intro__figure">
             <img
               className="intro__picture"
